@@ -38,6 +38,6 @@ def commission_cal(pLock,pStock,pBarrel):
         commission = commission + ((sumPrice/100)*10)
 
     if checkQuantity == True :
-        print (commission)
+        return (commission)
     else :
-        print("invalid")
+        return "invalid"

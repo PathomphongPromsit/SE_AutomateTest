@@ -1,4 +1,4 @@
-from commission import commission_cal
+from commission_cal import commission_cal
 task = []
 with open("DataTestCommission.txt", "r") as f:
     correct = 0

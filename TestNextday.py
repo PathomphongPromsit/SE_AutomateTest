@@ -2,6 +2,7 @@ from NextdayCal import cal_next_day
 task = []
 with open("DataTestNextday.txt", "r") as f:
     correct = 0
+    notcorrect = 0
     for line in f:
         task=line.strip()
 
@@ -19,4 +20,6 @@ with open("DataTestNextday.txt", "r") as f:
             print (month,day,year,"fail!!")
             ans_cal = cal_next_day(month,day,year)
             print("Test:", testResult, "Cal:", ans_cal)
+            notcorrect = notcorrect+1
     print("Total Correct Test Case:", correct)
+    print("Total Fail Test Case:", notcorrect)

@@ -1,6 +1,6 @@
 from NextdayCal import cal_next_day
 task = []
-with open("DataTestNextday.txt", "r") as f:
+with open("DataTestNextday_EEDTS.txt", "r") as f:
     correct = 0
     notcorrect = 0
     for line in f:
